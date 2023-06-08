@@ -1,0 +1,99 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.nav-item{
+  padding: 5px 1em;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+.button {
+  padding: 5px 1em;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: lightblue;
+  margin-top: -3px;
+}
+.nav-item:hover {
+  background: lightblue;
+  margin-top: -3px;
+}
+
+.nav-bar:last-child{
+  border-right: none;
+}
+.logo{
+  height: 2em; 
+  margin-bottom: 14px;
+}
+
+.hero{
+  height: 550px;
+  background-image: url("https://png.pngtree.com/background/20210716/original/pngtree-cute-looking-up-cat-picture-image_1362784.jpg");
+  object-fit: contain;
+  background-size: contain;
+  background-repeat: no repeat;
+} 
+
+.wrapper {
+  display: flex;
+}
+
+
+
+
+.portfolio-image-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1em;
+}
+.portfolio-image{
+  height: 5em; 
+  width: 5em;
+  border-radius: 50%;
+  border: 1px solid black
+}
+@media only screen and (max-width: 600px) {
+  .header-wrapper {
+      flex-direction: column;
+  }
+  .nav-bar {
+      width:100%;
+      flex-direction: column;
+  }
+  .portfolio-section {
+    width: 100%;
+    flex-direction: column;
+  }
+  .form-section{
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.slideshow-container{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+.div > slideshow-container > img-slideshow {
+  width: 1000px;
+}
